@@ -1,0 +1,18 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>
+    <%=title%> in EJS
+    </h1>
+    <ul>
+        <%for (var i=0; i<list.lengthi++){%>
+            <li><a href="<%=list[i].Link%>"><%=list[i].Text%></a></li>
+        <%}%>
+    </ul>
+</body>
+
+</html>
