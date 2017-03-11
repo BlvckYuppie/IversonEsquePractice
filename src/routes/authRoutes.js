@@ -39,7 +39,6 @@ var router = function () {
       })
          console.log(req.body);
 
-        });
 
     authRouter.route("/profile")
          .all(function(req,res,next){
@@ -53,6 +52,7 @@ var router = function () {
         });
 
     return authRouter;
+});
 };
 
 module.exports = router;

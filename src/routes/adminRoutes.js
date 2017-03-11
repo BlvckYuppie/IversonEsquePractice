@@ -6,35 +6,59 @@ var mongodb = require("mongodb").MongoClient;
 
 var books = [
     {
-        title: "Harry Potter",
-        genre: "Fiction",
-        author: "J.K. Rowling",
+        title: 'War and Peace',
+        genre: 'Historical Fiction',
+        author: 'Lev Nikolayevich Tolstoy',
         read: false
-    },
+        },
     {
-        title: "Random Book",
-        genre: "Fiction",
-        author: "Denzel Adams",
+        title: 'Les Misérables',
+        genre: 'Historical Fiction',
+        author: 'Victor Hugo',
         read: false
-    },
+        },
     {
-        title: "Another Random Book",
-        genre: "Fiction",
-        author: "Denzel Adams",
+        title: 'The Time Machine',
+        genre: 'Science Fiction',
+        author: 'H. G. Wells',
         read: false
-    },
+        },
     {
-        title: "Another Even More Random Book",
-        genre: "Fiction",
-        author: "Denzel Adams",
+        title: 'A Journey into the Center of the Earth',
+        genre: 'Science Fiction',
+        author: 'Jules Verne',
         read: false
-    },
+        },
+    {
+        title: 'The Dark World',
+        genre: 'Fantasy',
+        author: 'Henry Kuttner',
+        read: false
+        },
+    {
+        title: 'The Wind in the Willows',
+        genre: 'Fantasy',
+        author: 'Kenneth Grahame',
+        read: false
+        },
+    {
+        title: 'Life On The Mississippi',
+        genre: 'History',
+        author: 'Mark Twain',
+        read: false
+        },
+    {
+        title: 'Childhood',
+        genre: 'Biography',
+        author: 'Lev Nikolayevich Tolstoy',
+        read: false
+        }
+    ];
 
-];
 
 
 
-var router = function (nav) {
+function router (nav) {
 
     adminRouter.route('/addbooks')
         .get(function (req, res) {
