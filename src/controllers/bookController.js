@@ -17,7 +17,7 @@ var bookController = function (bookService, nav) {
 
             collection.find({}).toArray(
                 function (err, results) {
-                    res.render('bookListView', {
+                    res.render('booksListView', {
                         title: 'Books',
                         nav: nav,
                         books: results
